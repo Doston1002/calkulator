@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background: linear-gradient(to right, #666262, #5c6e5c);
+}
+
+.container {
+  background: #333131;
+  justify-content: center;
+  padding: 50px 0;
+  margin: 2rem auto;
+  border-radius: 40px;
+  box-shadow: 25px 25px 75px #363836, -12px -12px 14px #666 inset, 6px 6px 5px #666 inset;
+  width: 450px;
+
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(6rem, auto) repeat(4, 5rem);
+  justify-content: center;
+}
+
+.buttons>button {
+  box-shadow: 25px 25px 75px #282828,
+    -12px -12px 12px #484848 inset,
+    5px 5px 16px #0c0c0c inset;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 24px;
+  border: none;
+  outline: none;
+  background-color: rgb(68 68 68 / 75%);
+  margin: 5px;
+  color: #c9c9c9;
+}
+
+.ac {
+  background: #a12121 !important;
+  box-shadow: rgb(40 40 40) 25px 25px 75px, rgb(137 4 4) -12px -12px 12px inset, rgb(221 54 54) 5px 5px 16px inset !important;
+}
+
+.buttons>button:hover {
+  background-color: rgb(50 49 49);
+  box-shadow: 25px 25px 75px #282828, -12px -12px 12px #5e5e5e inset, 5px 5px 16px #000 inset;
+
+}
+
+.buttons>button:focus {
+  margin: 6px;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  width: 80%;
+  background-color: rgb(0 0 0 / 75%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin: 2rem auto;
+  height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-align: right;
+}
+
+
+.output .current-operand {
+  color: white;
+  font-size: 2.5rem;
+}
